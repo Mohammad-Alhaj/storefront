@@ -1,5 +1,5 @@
 import React from 'react';
-import { createRoot } from 'react-dom/client';
+import ReactDOM from "react-dom";
 import './index.css';
 import App from './App';
 import { Provider } from "react-redux";
@@ -17,5 +17,4 @@ function Main() {
 // either <div> or <App />
 // ReactDOM.render(<div>hello</div>, rootEl);
 // instead of having <div>hello</div> we gonna put the App.js it will be like (replace line 2 with this)
-const root = createRoot(rootEl);
-root.render(<Main tab="home" />);
+ReactDOM.render(<Main />, rootEl);
