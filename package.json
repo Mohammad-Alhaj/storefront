@@ -1,6 +1,5 @@
 {
   "name": "storefront",
-  "homepage": "https://github.com/Mohammad-Alhaj/storefront",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
