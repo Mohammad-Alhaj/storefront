@@ -1,0 +1,6 @@
+.categories .tabs {
+    margin-top: 70px;
+display: flex;
+justify-content: start;
+padding-left: 70px;
+}

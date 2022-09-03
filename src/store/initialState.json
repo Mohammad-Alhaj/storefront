@@ -1,0 +1,68 @@
+
+   [
+    
+      {
+        "id":2,
+        "category": "computers & accessories",
+        "name": "Sceptre 24 Professional",
+  
+        "description":
+          "Slim bezel with thin chassis. Power Range (V, A, Hz)- AC-DC Adapter Input 100 – 240 VAC, 50/60 Hz, 1.0A (Max.) Output - 12V DC, 2.5A.",
+        "image":
+          "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/71rXSVqET9L._AC_SL1257_.jpg"
+      },
+      
+      {
+        "id":1,
+        "category": "computers & accessories",
+        "name": "Sceptre 24 Professional",
+  
+        "description":
+          "Slim bezel with thin chassis. Power Range (V, A, Hz)- AC-DC Adapter Input 100 – 240 VAC, 50/60 Hz, 1.0A (Max.) Output - 12V DC, 2.5A.",
+        "image":
+          "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/71rXSVqET9L._AC_SL1257_.jpg"
+      },
+      {
+        "id":4,
+        "category": "book",
+        "name": "Verity Paperback",
+  
+        "description":
+          "Sublimely creepy with a true Hoover pulse. I’ve been waiting for a thriller like this for years.”―Tarryn Fisher, New York Times bestselling author",
+        "image":
+          "https://images-na.ssl-images-amazon.com/images/I/61tqfa+xbWL.jpg"
+      },
+
+      {
+        "id":5,
+        "category": "book",
+        "name": "Verity Paperbackl",
+  
+        "description":
+          "Sublimely creepy with a true Hoover pulse. I’ve been waiting for a thriller like this for years.”―Tarryn Fisher, New York Times bestselling author",
+        "image":
+          "https://images-na.ssl-images-amazon.com/images/I/61tqfa+xbWL.jpg"
+      },
+      {
+        "id":3,
+        "category": "computers & accessories",
+        "name": "Sceptre 24 Professional",
+  
+        "description":
+          "Slim bezel with thin chassis. Power Range (V, A, Hz)- AC-DC Adapter Input 100 – 240 VAC, 50/60 Hz, 1.0A (Max.) Output - 12V DC, 2.5A.",
+        "image":
+          "https://m.media-amazon.com/images/W/WEBP_402378-T1/images/I/71rXSVqET9L._AC_SL1257_.jpg"
+      },
+      {
+        "id":6,
+        "category": "book",
+        "name": "Verity Paperback",
+  
+        "description":
+          "Sublimely creepy with a true Hoover pulse. I’ve been waiting for a thriller like this for years.”―Tarryn Fisher, New York Times bestselling author",
+        "image":
+          "https://images-na.ssl-images-amazon.com/images/I/61tqfa+xbWL.jpg"
+      }
+    ]
+ 
+  
