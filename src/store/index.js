@@ -1,10 +1,10 @@
 // import {  combineReducers,configureStore  } from '@reduxjs/toolkit';
-import { combineReducers ,createStore} from 'redux';
+import { createStore} from 'redux';
 
 // import { legacy_createStore as createStore} from 'redux'
 import reducer from './Prduct';
 
-let result = combineReducers(reducer)
+// let result = combineReducers(reducer)
 
 const store = ()=>{
     return createStore (reducer)
