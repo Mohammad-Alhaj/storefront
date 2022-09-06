@@ -7,8 +7,8 @@ function SimpleCart (props) {
         {
             // console.log(props.cartObject.object)
             props.cartObject.object.map((ele,idx)=>
-            <div className="items">
-            <h3 key={idx}>{ele.name}</h3>
+            <div key={ele.id} className="items">
+            <h3 >{ele.name}</h3>
             <p onClick={()=>props.deleteFromCart(ele.id)} >X</p>
             </div>
             )
