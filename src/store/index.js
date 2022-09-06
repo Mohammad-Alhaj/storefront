@@ -1,13 +1,18 @@
 // import {  combineReducers,configureStore  } from '@reduxjs/toolkit';
-import { createStore} from 'redux';
+import { createStore,combineReducers} from 'redux';
 
 // import { legacy_createStore as createStore} from 'redux'
 import reducer from './Prduct';
+import CartReducer from './Carts'
+// import CartReducer from './Carts';
+let reducers = combineReducers({
+    reducer:reducer,
+    CartReducer:CartReducer
+})
 
-// let result = combineReducers(reducer)
 
 const store = ()=>{
-    return createStore (reducer)
+    return createStore (reducers)
 
 }
 

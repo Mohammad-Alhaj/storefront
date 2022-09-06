@@ -13,7 +13,7 @@ function Categories(props){
 return(
     <div className='categories'>
      <Box className='tabs' sx={{ width: '100%', bgcolor: 'background.paper' }}>
-      <Tabs value={value} onChange={handleChange} centered>
+      <Tabs className='the-tabs' value={value} onChange={handleChange} centered>
         <Tab label="All" onClick={()=>props.all()} />
         <Tab label="Computers & Accessories" onClick={()=>props.computers("computers & accessories")} />
         <Tab label="Books" onClick={()=>props.book("book")}/>
