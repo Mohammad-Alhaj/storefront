@@ -7,7 +7,11 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import './Products.css'
 import { connect } from "react-redux";
+
+import { increment ,addToCard} from '../../store/Carts';
  function Products(props){
+
+
 
     return(
     <div className='products'>
@@ -31,7 +35,10 @@ import { connect } from "react-redux";
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">add to cart</Button>
+        <Button size="small" onClick={()=>
+         props.addToCard(ele)
+        }
+          >add to cart</Button>
         <Button size="small">Learn More</Button>
       </CardActions>
     </Card>
@@ -45,7 +52,9 @@ import { connect } from "react-redux";
 }
 
 const mapStateToProps = (state) => ({
-    product :state
+    product :state.reducer,
 })
 
-export default connect(mapStateToProps)(Products)
+const mapdispatchToprops = {increment,addToCard}
+
+export default connect(mapStateToProps,mapdispatchToprops)(Products)

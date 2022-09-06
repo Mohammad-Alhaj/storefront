@@ -1,5 +1,4 @@
-import { Button } from '@mui/material';
-import './Header.css'
+import './Footer.css'
 
 export default function Footer(props){
     return(

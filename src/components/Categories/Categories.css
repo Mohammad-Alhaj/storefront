@@ -4,3 +4,10 @@ display: flex;
 justify-content: flex-start;
 padding-left: 70px;
 }
+
+/* 
+.MuiTabs-flexContainer  {
+   display: flex;
+flex-direction: column;
+border: 0;
+} */

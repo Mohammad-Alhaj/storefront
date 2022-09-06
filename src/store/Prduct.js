@@ -5,7 +5,6 @@ import initialState from './initialState.json'
 
 export default function reducer(state = initialState,action){
 const   {type} = action
-console.log({type});
 switch (type) {
     case "computers & accessories":
       // console.log(type);
