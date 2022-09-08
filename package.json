@@ -8,6 +8,7 @@
     "@mui/icons-material": "^5.10.3",
     "@mui/material": "^5.10.3",
     "@mui/styled-engine-sc": "^5.10.3",
+    "axios": "^0.27.2",
     "install": "^0.13.0",
     "npm": "^7.21.0",
     "react": "^17.0.2",
@@ -16,6 +17,7 @@
     "react-scripts": "4.0.3",
     "redux": "^4.1.1",
     "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.4.1",
     "styled-components": "^5.3.5",
     "web-vitals": "^1.1.2"
   },
