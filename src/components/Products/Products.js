@@ -1,4 +1,5 @@
-import * as React from 'react';
+import React from 'react';
+import { useEffect,useState } from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -7,18 +8,31 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import './Products.css'
 import { connect } from "react-redux";
-
+import {getDataApi,updateDataApi} from '../../store/actions'
 import { increment ,addToCard} from '../../store/Carts';
- function Products(props){
+import { useDispatch } from 'react-redux';
+ function Products({increment,addToCard,getDataApi,updateDataApi,product}){
+  const [conuter,setCounter] = useState(0)
+  const dispatch = useDispatch()
+// const [count,setCount] = useState(1)
+// useEffect(()=>{
 
+//  props.getDataApi();
+// console.log(props.getDataApi());
+// },[])
 
+useEffect(() => {
+  console.log('outside the useEffect')
+ getDataApi()
+
+}, [getDataApi])
 
     return(
     <div className='products'>
-     { console.log(props.product)}
+     { console.log(product)}
       {
-       props.product.map((ele,idx)=>
-       
+      product.map((ele,idx)=>
+     
      <Card key={idx} sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
@@ -34,27 +48,39 @@ import { increment ,addToCard} from '../../store/Carts';
           {ele.description}
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small" onClick={()=>
-         props.addToCard(ele)
+      <CardActions>  
+        {ele.amount>0?<Button size="small" onClick={()=>{
+     updateDataApi(ele)
+     getDataApi()
+          getDataApi()
+        addToCard(ele)
+        getDataApi()
+
+          
         }
-          >add to cart</Button>
-        <Button size="small">Learn More</Button>
+        }
+          >add to cart</Button>:<p style={{backgroundColor:'red',padding:"5px",
+        borderRadius:"5px",color:'white'
+        
+        }}>out of stock</p>
+          }
+        <Typography >In stock : {ele.amount}</Typography>
+        {/* <Button onClick={()=>} >re render </Button> */}
       </CardActions>
     </Card>
    
 )
+
 }
    
-    
     </div>
     )
 }
 
 const mapStateToProps = (state) => ({
-    product :state.reducer,
+    product :state.server,
 })
 
-const mapdispatchToprops = {increment,addToCard}
+const mapdispatchToprops = {increment,addToCard,getDataApi,updateDataApi}
 
 export default connect(mapStateToProps,mapdispatchToprops)(Products)

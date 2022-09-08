@@ -20,7 +20,7 @@ switch (type) {
             object: [...state.object,payload]
             // [...state.object,payload]
         }
-    case 'DELETE':
+    case 'DELETEFROMCART':
         let result = state.object.filter(ele=>ele.id !== payload)
 
         return{
@@ -54,7 +54,7 @@ export const addToCard = (payload)=>{
 
 export const deleteFromCart = (id)=>{
     return{
-        type:'DELETE',
+        type:'DELETEFROMCART',
         payload:id
     }
     
