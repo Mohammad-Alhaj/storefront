@@ -1,22 +1,17 @@
-// import {  combineReducers,configureStore  } from '@reduxjs/toolkit';
-import { createStore,combineReducers,applyMiddleware} from 'redux';
+import { configureStore } from "@reduxjs/toolkit";
 
-// import { legacy_createStore as createStore} from 'redux'
-import reducer from './Prduct';
-import CartReducer from './Carts'
-import server from './getDataApi'
-import thunk from "redux-thunk";
-// import CartReducer from './Carts';
+import { combineReducers } from "redux";
+// import reducer from './Prduct';
+import cartSlice from './Carts'
+import serverSlice from './getDataApi'
 let reducers = combineReducers({
     // reducer:reducer,
-    CartReducer:CartReducer,
-    server:server
+    CartReducer:cartSlice,
+    server:serverSlice
 })
 
 
-const store = ()=>{
-    return createStore (reducers,applyMiddleware(thunk))
+const store = configureStore({reducer: reducers})
 
-}
 
-export default store()
+export default store
