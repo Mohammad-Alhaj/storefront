@@ -1,5 +1,5 @@
 import React from 'react';
-import { useEffect,useState } from 'react';
+import { useEffect } from 'react';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -8,18 +8,12 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import './Products.css'
 import { connect } from "react-redux";
-import {getDataApi,updateDataApi} from '../../store/actions'
+import {getDataApi,updateDataApi} from '../../store/getDataApi'
 import { increment ,addToCard} from '../../store/Carts';
-import { useDispatch } from 'react-redux';
- function Products({increment,addToCard,getDataApi,updateDataApi,product}){
-  const [conuter,setCounter] = useState(0)
-  const dispatch = useDispatch()
-// const [count,setCount] = useState(1)
-// useEffect(()=>{
+import {Link} from 'react-router-dom'
 
-//  props.getDataApi();
-// console.log(props.getDataApi());
-// },[])
+ function Products({increment,addToCard,getDataApi,updateDataApi,product}){
+
 
 useEffect(() => {
   console.log('outside the useEffect')
@@ -27,12 +21,14 @@ useEffect(() => {
 
 }, [getDataApi])
 
+
+
     return(
     <div className='products'>
      { console.log(product)}
       {
       product.map((ele,idx)=>
-     
+      <Link to={`${ele.id}`} key={ele.id}>
      <Card key={idx} sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
@@ -68,6 +64,7 @@ useEffect(() => {
         {/* <Button onClick={()=>} >re render </Button> */}
       </CardActions>
     </Card>
+    </Link>
    
 )
 

@@ -33,20 +33,20 @@
 // }
 
 
-export const computers = (category)=>{
-   return {
-    type:category,
+// export const computers = (category)=>{
+//    return {
+//     type:category,
 
    
-   } 
-}
-export const book = (category)=>{
-    return {
-        type:category,
+//    } 
+// }
+// export const book = (category)=>{
+//     return {
+//         type:category,
        
-       } }
-export const all = ()=>{
-    return {
-        type:'all',
+//        } }
+// export const all = ()=>{
+//     return {
+//         type:'all',
        
-       } }
+//        } }

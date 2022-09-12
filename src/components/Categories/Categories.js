@@ -2,8 +2,8 @@ import { Tabs,Tab,Box } from '@mui/material';
 import  React from 'react';
 import './Categories.css'
 import { connect } from 'react-redux';
-import {book,computers,all} from '../../store/Prduct'
-import {getDataApi} from '../../store/actions'
+import {book,computers,all} from '../../store/getDataApi'
+import {getDataApi} from '../../store/getDataApi'
 // import {useEffect}from 'react'
 // import { useDispatch } from 'react-redux';
 
